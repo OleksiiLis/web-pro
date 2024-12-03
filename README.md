@@ -1,1 +1,136 @@
-# web-pro
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СЛАВА УКРАЇНІ</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+   <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        window.addEventListener('scroll', () => {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+  <header>
+        <div class="container">
+            <a href="#" class="logo"> <!-- logo --> </a>
+            <nav>
+                <ul>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#info">Інформація</a></li>
+                    <li><a href="#products">Продукти</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <main>
+        <!-- Головний блок -->
+        <section id="hero" class="hero-section">
+            <h1>СЛАВА УКРАЇНІ</h1>
+            <p>Героям слава! Найкращі товари для вас.</p>
+            <button class="shop-now">Купити зараз</button>
+        </section>
+
+       <!-- Каталог -->
+
+ <section id="catalog" class="container">
+            <h2>Наші товари</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="img/product1.jpg" alt="Продукт 1">
+                    <h3>Продукт 1</h3>
+                    <p>Опис продукту.</p>
+                    <p class="price">500 грн.</p>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+                <div class="product">
+                    <img src="img/product2.jpg" alt="Продукт 2">
+                    <h3>Продукт 2</h3>
+                    <p>Опис продукту.</p>
+                    <p class="price">700 грн.</p>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+                <div class="product">
+                    <img src="img/product3.jpg" alt="Продукт 3">
+                    <h3>Продукт 3</h3>
+                    <p>Опис продукту.</p>
+                    <p class="price">600 грн.</p>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Інформація -->
+   <section id="info" class="info-section">
+            <h2>ГАРНА ІНФА</h2>
+            <p><span>Опис товару</span> — Опис доставки та додаткова інформація.</p>
+        </section>
+
+        <!-- Продукти -->
+  <section id="products" class="container">
+            <h2>Більше про продукти</h2>
+            <ul class="product-list">
+                <li>
+                    <article>
+                        <h3>Назва продукту</h3>
+                        <p>Опис продукту</p>
+                        <p>Додаткові деталі</p>
+                        <p>Можна додати відео</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Назва продукту 2</h3>
+                        <p>Опис продукту</p>
+                        <p>Додаткові деталі</p>
+                        <p>Можна додати відео</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Назва продукту 3</h3>
+                        <p>Опис продукту</p>
+                        <p>Додаткові деталі</p>
+                        <p>Можна додати відео</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Контакти -->
+  <section id="contacts" class="contacts-section">
+            <h2>Контакти</h2>
+            <p>Email: info@ukraine.com</p>
+            <p>Телефон: +380 123 456 789</p>
+        </section>
+    </main>
+
+ <footer>
+        <div class="container">
+            <p>&copy; 2024 СЛАВА УКРАЇНІ. Всі права захищені.</p>
+            <ul class="footer-nav">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#info">Інформація</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </div>
+    </footer>
+    <button id="scrollToTop" class="scroll-to-top">⬆</button>
+
+</body>
+
+</html>
